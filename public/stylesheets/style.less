@@ -1,0 +1,400 @@
+.site-title {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 54px;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
+}
+.site-title {
+  color: #444;
+}
+.site-title:visited {
+  color: #444;
+}
+.site-nav {
+  line-height: 54px;
+  text-align: right;
+}
+.site-nav .nav-trigger {
+  display: none;
+}
+.site-nav .menu-icon {
+  display: none;
+}
+.site-nav .page-link {
+  color: #606c76;
+  line-height: 1.5;
+  font-size: 0.9em;
+  padding: 0 2px 4px 2px;
+}
+.site-nav .page-link:not(:last-child) {
+  margin-right: 35px;
+}
+@media screen and (max-width: 640px) {
+  .site-nav {
+    position: absolute;
+    top: 9px;
+    right: 15px;
+    background-color: #fdfdfd;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    text-align: right;
+  }
+  .site-nav label[for="nav-trigger"] {
+    display: block;
+    float: right;
+    width: 36px;
+    height: 36px;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .site-nav .menu-icon {
+    display: block;
+    float: right;
+    width: 36px;
+    height: 26px;
+    line-height: 0;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .site-nav .menu-icon > svg {
+    fill: #424242;
+  }
+  .site-nav input ~ .trigger {
+    clear: both;
+    display: none;
+  }
+  .site-nav input:checked ~ .trigger {
+    display: block;
+    padding-bottom: 5px;
+  }
+  .site-nav .page-link {
+    display: block;
+    padding: 5px 10px;
+    margin-left: 20px;
+  }
+  .site-nav .page-link:not(:last-child) {
+    margin-right: 0;
+  }
+}
+.site-nav label {
+  margin-bottom: 0;
+}
+.xs-visible {
+  display: none !important;
+}
+@media screen and (max-width: 640px) {
+  .xs-visible {
+    display: block !important;
+  }
+}
+#menu-name {
+  line-height: 54px;
+}
+#page-content {
+  padding-top: 80px;
+}
+footer {
+  margin-top: 80px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 0.7em;
+  border-top: 1px solid #f8f8f8;
+  color: #888;
+}
+footer p {
+  margin-bottom: 4px;
+  text-align: center;
+}
+#cp {
+  font-size: 1em;
+}
+#by-gatsby {
+  font-size: 0.9em;
+}
+blockquote,
+dl,
+figure,
+form,
+ol,
+p,
+pre,
+table,
+ul {
+  margin-bottom: 1.3rem;
+}
+@media screen and (max-width: 640px) {
+  #page-content {
+    padding-top: 50px;
+  }
+  #map-holder.container {
+    padding: 0;
+  }
+  #content-wrapper {
+    border-left: none;
+    padding-top: 16px;
+    padding-left: 0rem;
+  }
+  h2 {
+    text-align: center;
+  }
+}
+.item-table {
+  margin-bottom: 28px;
+  padding-bottom: 10px;
+}
+.item-table td {
+  border: none;
+  padding: 0rem 0rem;
+}
+.item-name {
+  font-weight: bold;
+}
+.item-name,
+.item-when {
+  color: #444;
+}
+.item-when,
+.item-where {
+  text-align: right;
+}
+.item-when {
+  font-size: 0.9em;
+}
+.item-where {
+  font-size: 0.8em;
+}
+.item-org {
+  font-size: 0.87em;
+}
+td.item-more-info {
+  padding-top: 6px;
+  color: #444;
+}
+#menu-name {
+  font-size: 1.2em;
+}
+p,
+li {
+  color: #444;
+}
+.site-header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #fcfcfc;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-bottom: 1px solid #e8e8e8;
+  min-height: 55.95px;
+}
+.skill-meter {
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+/* themes */
+/* default = great-gatsby */
+a {
+  color: #bbaa5e;
+}
+a:hover,
+a:focus,
+.site-nav .page-link.active {
+  color: #666 !important;
+}
+.site-header {
+  border-top-color: #bbaa5e;
+}
+.page-header {
+  text-align: center;
+  color: #444;
+  margin-bottom: 4px;
+}
+.feature {
+  fill: #ccc;
+  cursor: pointer;
+}
+.feature.active {
+  fill: orange;
+}
+.mesh {
+  fill: none;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+path:hover {
+  fill: #ccc;
+}
+#popup {
+  position: absolute;
+  left: 100px;
+  padding: 4px 10px;
+  background: rgba(255, 255, 255, 1);
+  color: black;
+  font-size: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+#popup table {
+  margin-bottom: 0;
+}
+#popup h6 {
+  margin: 0;
+  font-size: 1.2rem;
+  border-bottom: 0.5px solid #ddd;
+  margin-bottom: 6px;
+}
+#popup th,
+#popup td {
+  padding: 0px;
+  margin: 0;
+  font-size: 1.1rem;
+  text-align: center;
+  border: none;
+}
+#popup th:not(:last-child) {
+  padding-right: 6px;
+}
+#popup th {
+  font-size: 1rem;
+}
+
+#map-holder {
+  text-align: center;
+}
+#svg-holder {
+  display: block;
+  padding: 0;
+}
+.container {
+  position: static;
+}
+#updated {
+  color: white;
+  background: #bbaa5e;
+  font-weight: normal;
+  font-size: 0.8em;
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 2px;
+  margin-bottom: 5px;
+}
+#updated span {
+  color: #eee;
+}
+.center-text {
+  text-align: center;
+}
+#data-source {
+  text-align: center;
+  color: #ccc;
+  font-size: 0.6em;
+}
+#middle-info-holder {
+  margin-top: 15px;
+}
+#table-holder th {
+  font-size: 0.9em;
+}
+#table-holder td {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 0.8em;
+  border-bottom: none;
+  text-indent: 2px;
+}
+#table-holder tbody tr:nth-child(odd) {
+  background-color: #efefef;
+}
+#total-holder {
+}
+.h-value {
+  font-size: 2.8em;
+}
+.h-title {
+  margin-bottom: 0;
+  flex: 1;
+  color: #aaa;
+  font-size: 2.4em;
+  margin-top: 60px;
+}
+svg {
+  max-width: 100%;
+  pointer-events: auto;
+}
+@media screen and (max-width: 640px) {
+  #total-holder {
+    flex-direction: row;
+    display: flex;
+  }
+  .total-group {
+    flex: 1;
+  }
+
+  .h-value {
+    font-size: 2.3em;
+  }
+
+  .h-title {
+    font-size: 1.8em;
+  }
+  #table-holder th {
+    font-size: 0.9em;
+  }
+  #table-holder td {
+    font-size: 1em;
+  }
+}
+
+.faq:not(:last-child) {
+  border-bottom: 1px solid #efefef;
+}
+.faq-question,
+.faq-answer {
+  padding: 8px 0;
+}
+.faq-question {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+}
+.faq-question:hover {
+  color: black;
+}
+.question {
+  flex: 1;
+}
+.open-close-sign {
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+.faq-answer p {
+  margin-bottom: 8px;
+}
+#faqs {
+  margin-top: 20px;
+}
+#faq-title {
+  margin-bottom: 8px;
+}
+.dummy-link {
+  height: 40px;
+}
+.counter-on-map {
+  font-size: 0.7em;
+  pointer-events: none;
+}
