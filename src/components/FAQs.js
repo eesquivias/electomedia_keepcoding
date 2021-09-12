@@ -1,6 +1,8 @@
 import React from "react"
 import FAQ from "./FAQ"
 
+
+
 export default props => {
   const faqs = props.data.map((item, index) => (
     <FAQ
@@ -12,7 +14,8 @@ export default props => {
   ))
   return (
     <div id="faqs">
-      <h4 id="faq-title">Preguntas clave del proyecto</h4>
+      <h4 id="faq-title">Pipeline del Proyecto</h4>
+      <div id="pipe_img"></div>
       {faqs}
     </div>
   )

@@ -116,12 +116,30 @@ module.exports = {
     */
     faqs: [
       {
-        question: `¿Por qué la gestión disruptiva de datos electorales?`,
-        answer: `<p>Este es un proyecto muy bonito que se ha hecho con el corazón y tal cual pascual...ya si eso lo vamos escribiendo luego para justificar las motivaciones de iniciar estas líneas de investigación.</p>`,
+        question: `Definición del Data Set`,
+        answer: `<img id="data_img"></img>
+        <p>La naturaleza del presente proyecto se sintetiza en el despliegue de un laboratorio de investigación, en base a las actuales tecnologías disruptivas de gestión de datos, sobre comportamiento electoral de los españoles.</p>
+        <p>En este sentido la principal dificultad radica en el propio proceso de selección de variables, obligando a delimitar un espacio acotado de trabajo sobre datos de acceso publico:</p>     
+        <p><h4>Datos electorales</h4></p>  
+        <p>Los datos electorales son la base de la Práctica, y constan de los resultados electorales detallados de las secciones censales en los comicios generales de 2011, 2015, 2016, y los dos celebrados en 2019. Los datos se han extraído de la página web del Ministerio del Interior. Se trata de, para cada elección, de un conjunto de ficheros .DAT. Los dos fundamentales son los que definen las distintas mesas electorales, y el resultado de cada partido en ellas.</p>   
+        <p><h4>Datos sociodemográficos</h4>
+        <p>Hemos complementado los datos electorales de las secciones con datos sociodemográficos, también a nivel de sección censal cuando fue posible, o a nivel de municipio en su defecto. El origen de los datos ha sido el INE, el Ministerio de Inclusión Social y Migraciones, y el Ministerio de Trabajo y Economía Social.</p>
+        <p> Esta decisión se justifica ante el hecho de que una vez considerados los resultados electorales como variable objetivo en nuestro estudio, es necesario establecer una imagen fija de las personas que ya sabemos como vota. Evidentemente el objetivo es conocer las posibles relaciones entre ambos conjuntos de datos.
+        <p><h4>Microdatos del Centro de Investigaciones Sociológicas</h4></p>
+        <p>Los estudios del Centro de Investigaciones Sociológicas son una importante fuente de datos en materia electoral. Concretamente, realización de los Macrobarómetros en las semanas previas a los comicios análizados, son considerados una importante fuente para el ejercicio actual</p>
+        <p><h4>Twitter</h4></p>
+        <p>Esta fuente puede considerarse como uno de los pilares de la práctica final: aportar una fuente de datos dinámica a escenarios dibujados por datos estáticos. Las encuestas tradicionales (CIS) suscitan numerosas críticas en su aportación a la investigación por varios factores (sesgo en el trabajo de campo, cocina estadística, etc.), sin embargo, las redes sociales, con la debida gestión y rigor científico, pueden mostrar una increíble dinamismo sobre la actualidad y la opinión generada y cómo ambas podríam estar relacionadas con nuestra variable objetivo.</p>
+        <p><h4>Cruzado De Fuentes</h4></p>
+        <p>De esta forma, se justifica el primer bloque de la práctica con la intencionalidad de abordar tres grandes bloques de datos: </p>
+        <li>Resultados electorales</li>
+        <li>Perfiles sociales</li>
+        <li>Análisis de sentimiento</li>
+        `,
       },
       {
-        question: `¿Cuál ha sido el planteamiento organizativo inicial?`,
-        answer: `<p>Se seleccionaron las fuentes de datos más importantes Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>`,
+        question: `Análisis Exploratorio`,
+        answer: `<img id="explo_img"></img>
+        <p>Se seleccionaron las fuentes de datos más importantes Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>`,
       },
       {
         question: `¿Por qué están locos los romanos?`,
