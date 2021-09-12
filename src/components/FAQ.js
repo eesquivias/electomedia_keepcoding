@@ -21,7 +21,7 @@ export default ({ tabIndex, question, answer }) => {
 
       {open ? (
         <div id="img" 
-          className="faq-answer "
+          className="faq-answer"
           dangerouslySetInnerHTML={{ __html: answer}}
         />
       ) : null}
