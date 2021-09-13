@@ -4,7 +4,11 @@ module.exports = {
     name: `Keepcoding Tech School`,
     description: `Trabajo Final Bootcamp BDMLAI7`,
     last_updated: `Uso práctico de tecnologías disruptivas en la gestión de datos electorales`,
-    data_source: `<a target="_blank" href="http://www.interior.gob.es/" rel="noopener noreferrer">Ministerio del Interior</a> 
+    data_source: `<a target="_blank" href="http://www.interior.gob.es/" rel="noopener noreferrer">Ministerio del Interior</a>
+    | <a target="_blank" href="https://www.ine.es//" rel="noopener noreferrer">INE</a>
+    | <a target="_blank" href="https://www.seg-social.es/" rel="noopener noreferrer">SS</a>
+    | <a target="_blank" href="https://www.sepe.es/" rel="noopener noreferrer">SEPE</a> 
+    | <a target="_blank" href="https://www.inclusion.gob.es/" rel="noopener noreferrer">Ministerio de Inclusión Social</a>
     | <a target="_blank" href="http://www.cis.es/" rel="noopener noreferrer">CIS</a>
     | <a target="_blank" href="http://www.twitter.com/" rel="noopener noreferrer">Twitter</a>`,
 

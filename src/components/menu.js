@@ -4,10 +4,10 @@ import { Link } from "gatsby"
 
 const Menu = props => {
   const menuItems = [
-    { name: "Mapas", link: "#top-link" },
+    { name: "Mapas", link: "https://electomedia-keepcoding-2021.netlify.app/" },
     { name: "Tablas", link: "#tables-link" },
-    { name: "Arquitectura", link: "#faqs-link" },
-    { name: "Desarrollo", link: "#faqs-link" },
+    { name: "Pipeline", link: "#faqs-link" },
+    { name: "Github", link: "https://github.com/eesquivias/proyecto_electomedia" },
   ].map((item, index) => (
     <MenuItem
       to={item.link}
