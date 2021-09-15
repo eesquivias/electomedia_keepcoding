@@ -14,7 +14,7 @@ export default props => {
   ))
   return (
     <div id="faqs">
-      <h4 id="faq-title">Pipeline del Proyecto</h4>
+      <h4 id="faq-title">Pipeline del Proyecto</h4><a target="_blank" rel="noopener noreferrer" href="https://github.com/eesquivias/proyecto_electomedia">Github del Proyecto</a>
       <div id="pipe_img"></div>
       {faqs}
     </div>

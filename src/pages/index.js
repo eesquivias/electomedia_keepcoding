@@ -3,7 +3,8 @@ import Layout from "../components/layout"
 import Map from "../components/map"
 import LastUpdate from "../components/last-update"
 import Table from "../components/table"
-import Total from "../components/total"
+import Table2 from "../components/table2"
+//import Total from "../components/total"
 import FAQs from "../components/FAQs"
 import { useStaticQuery, graphql } from "gatsby"
 import spainMapData from "../../static/spain.json"
@@ -35,6 +36,8 @@ export default props => {
           VOX
           UP
           CS
+          PNV
+          BILDU
         }
         data_source
         faqs {
@@ -52,12 +55,18 @@ export default props => {
     >
       <LastUpdate date={data.site.siteMetadata.last_updated} />
       <DataSourceReference data={data.site.siteMetadata.data_source} />
+       <div className="container">
+        <div className="dummy-link" id="tables-link">
+          <div id="faqs">Diputados al Congreso por Circunscripción Electoral - Elecciones Generales Noviembre 2019</div>
+          </div>
+          </div>
       <Map data={data.site.siteMetadata.data} mapData={spainMapData} />
       <div className="container">
-        <div className="dummy-link" id="tables-link"></div>
+        <div className="dummy-link" id="tables-link">
+          <div id="faqs">dsdsds</div>
+          </div>
         <div className="row" id="middle-info-holder">
           <Table data={data.site.siteMetadata.data} />
-          <Total data={data.site.siteMetadata.data} />
         </div>
         <div className="colors"></div>
         <div className="dummy-link" id="faqs-link"></div>

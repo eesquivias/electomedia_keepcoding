@@ -21,6 +21,7 @@ const Popup = props => {
             <th>VOX</th>
             <th>UP</th>
             <th>CS</th>
+            <th>PNV</th>
           </tr>
         </thead>
         <tbody>
@@ -30,6 +31,7 @@ const Popup = props => {
             <td>{props.VOX}</td>
             <td>{props.UP}</td>
             <td>{props.CS}</td>
+            <td>{props.PNV}</td>
           </tr>
         </tbody>
       </table>

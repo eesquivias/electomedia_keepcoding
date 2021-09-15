@@ -10,14 +10,15 @@ module.exports = {
     | <a target="_blank" href="https://www.sepe.es/" rel="noopener noreferrer">SEPE</a> 
     | <a target="_blank" href="https://www.inclusion.gob.es/" rel="noopener noreferrer">Ministerio de Inclusión Social</a>
     | <a target="_blank" href="http://www.cis.es/" rel="noopener noreferrer">CIS</a>
-    | <a target="_blank" href="http://www.twitter.com/" rel="noopener noreferrer">Twitter</a>`,
+    | <a target="_blank" href="http://www.twitter.com/" rel="noopener noreferrer">Twitter</a>
+    | <a target="_blank" href="https://www.ign.es/web/ign/portal/" rel="noopener noreferrer">Instituto Geográfico Nacional</a>`,
 
     //order of provinces is important!
     data: [{"PROVINCIA":"Melilla","PSOE":0.0,"PP":1.0,"VOX":0.0,"UP":0.0,"CS":0.0},
     {"PROVINCIA":"Ceuta","PSOE":0.0,"PP":0.0,"VOX":1.0,"UP":0.0,"CS":0.0},
     {"PROVINCIA":"Zaragoza","PSOE":3.0,"PP":2.0,"VOX":1.0,"UP":1.0,"CS":0.0},
     {"PROVINCIA":"Zamora","PSOE":1.0,"PP":1.0,"VOX":1.0,"UP":0.0,"CS":0.0},
-    {"PROVINCIA":"Bizkaia","PSOE":2.0,"PP":1.0,"VOX":0.0,"UP":1.0,"CS":0.0},
+    {"PROVINCIA":"Bizkaia","PSOE":2.0,"PP":1.0,"VOX":0.0,"UP":1.0,"CS":0.0,"PNV":3.0,"BILDU":1.0},
     {"PROVINCIA":"Valladolid","PSOE":2.0,"PP":2.0,"VOX":1.0,"UP":0.0,"CS":0.0},
     {"PROVINCIA":"Valencia","PSOE":4.0,"PP":4.0,"VOX":3.0,"UP":2.0,"CS":1.0},
     {"PROVINCIA":"Toledo","PSOE":2.0,"PP":2.0,"VOX":2.0,"UP":0.0,"CS":0.0},
@@ -63,61 +64,57 @@ module.exports = {
     {"PROVINCIA":"Alicante","PSOE":4.0,"PP":3.0,"VOX":3.0,"UP":1.0,"CS":1.0},
     {"PROVINCIA":"Albacete","PSOE":2.0,"PP":1.0,"VOX":1.0,"UP":0.0,"CS":0.0},
     {"PROVINCIA":"Álava","PSOE":1.0,"PP":0.0,"VOX":0.0,"UP":1.0,"CS":0.0}],
-    
-    /*
-    [
-      { province: "Melilla", psoe: 2, pp: 50 },
-      { province: "Ceuta", psoe: 3, pp: 49 },
-      { province: "Zaragoza", psoe: 4, pp: 48 },
-      { province: "Zamora", psoe: 5, pp: 47 },
-      { province: "Bizkaia", psoe: 6, pp: 46 },
-      { province: "Valladolid", psoe: 7, pp: 45 },
-      { province: "Valencia", psoe: 8, pp: 44 },
-      { province: "Toledo", psoe: 9, pp: 43 },
-      { province: "Teruel", psoe: 10, pp: 42 },
-      { province: "Tarragona", psoe: 11, pp: 41 },
-      { province: "Soria", psoe: 12, pp: 40 },
-      { province: "Sevilla", psoe: 13, pp: 39 },
-      { province: "Segovia", psoe: 14, pp: 38 },
-      { province: "Cantabria", psoe: 15, pp: 37 },
-      { province: "Salamanca", psoe: 16, pp: 36 },
-      { province: "Pontevedra", psoe: 17, pp: 35 },
-      { province: "Palencia", psoe: 18, pp: 34 },
-      { province: "Asturias", psoe: 19, pp: 33 },
-      { province: "Ourense", psoe: 20, pp: 32 },
-      { province: "Navarra", psoe: 21, pp: 31 },
-      { province: "Murcia", psoe: 22, pp: 30 },
-      { province: "Málaga", psoe: 23, pp: 29 },
-      { province: "Madrid", psoe: 24, pp: 28 },
-      { province: "Lugo", psoe: 25, pp: 27 },
-      { province: "La Rioja", psoe: 26, pp: 26 },
-      { province: "Lleida", psoe: 27, pp: 25 },
-      { province: "León", psoe: 28, pp: 24 },
-      { province: "Jaén", psoe: 29, pp: 23 },
-      { province: "Huesca", psoe: 30, pp: 22 },
-      { province: "Huelva", psoe: 31, pp: 21 },
-      { province: "Guipuzkoa", psoe: 32, pp: 20 },
-      { province: "Guadalajara", psoe: 33, pp: 19 },
-      { province: "Granada", psoe: 34, pp: 18 },
-      { province: "Girona", psoe: 35, pp: 17 },
-      { province: "Cuenca", psoe: 36, pp: 16 },
-      { province: "A Coruña", psoe: 37, pp: 15 },
-      { province: "Córdoba", psoe: 38, pp: 14 },
-      { province: "Ciudad Real", psoe: 39, pp: 13 },
-      { province: "Castellón", psoe: 40, pp: 12 },
-      { province: "Cádiz", psoe: 41, pp: 11 },
-      { province: "Cáceres", psoe: 42, pp: 10 },
-      { province: "Burgos", psoe: 43, pp: 9 },
-      { province: "Barcelona", psoe: 44, pp: 8 },
-      { province: "Illes Balears", psoe: 45, pp: 7 },
-      { province: "Badajoz", psoe: 46, pp: 6 },
-      { province: "Ávila", psoe: 47, pp: 5 },
-      { province: "Almería", psoe: 48, pp: 4 },
-      { province: "Alicante", psoe: 49, pp: 3 },      
-      { province: "Albacete", psoe: 50, pp: 2 },
-      { province: "Álava", psoe: 51, pp: 1 },
-    ],
-    */
+    data2: [{"PROVINCIA":"Melilla","PSOE":0.0,"PP":1.0,"VOX":0.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Ceuta","PSOE":0.0,"PP":0.0,"VOX":1.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Zaragoza","PSOE":3.0,"PP":2.0,"VOX":1.0,"UP":1.0,"CS":0.0},
+    {"PROVINCIA":"Zamora","PSOE":1.0,"PP":1.0,"VOX":1.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Bizkaia","PSOE":2.0,"PP":1.0,"VOX":0.0,"UP":1.0,"CS":0.0,"PNV":3.0,"BILDU":1.0},
+    {"PROVINCIA":"Valladolid","PSOE":2.0,"PP":2.0,"VOX":1.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Valencia","PSOE":4.0,"PP":4.0,"VOX":3.0,"UP":2.0,"CS":1.0},
+    {"PROVINCIA":"Toledo","PSOE":2.0,"PP":2.0,"VOX":2.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Teruel","PSOE":1.0,"PP":1.0,"VOX":0.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Tarragona","PSOE":2.0,"PP":0.0,"VOX":0.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Soria","PSOE":1.0,"PP":1.0,"VOX":0.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Sevilla","PSOE":5.0,"PP":2.0,"VOX":2.0,"UP":2.0,"CS":1.0},
+    {"PROVINCIA":"Segovia","PSOE":1.0,"PP":1.0,"VOX":1.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Cantabria","PSOE":1.0,"PP":2.0,"VOX":1.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Salamanca","PSOE":1.0,"PP":2.0,"VOX":1.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Pontevedra","PSOE":3.0,"PP":3.0,"VOX":0.0,"UP":1.0,"CS":0.0},
+    {"PROVINCIA":"Palencia","PSOE":1.0,"PP":2.0,"VOX":0.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Asturias","PSOE":3.0,"PP":2.0,"VOX":1.0,"UP":1.0,"CS":0.0},
+    {"PROVINCIA":"Ourense","PSOE":2.0,"PP":2.0,"VOX":0.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Navarra","PSOE":1.0,"PP":0.0,"VOX":0.0,"UP":1.0,"CS":0.0},
+    {"PROVINCIA":"Murcia","PSOE":3.0,"PP":3.0,"VOX":3.0,"UP":1.0,"CS":0.0},
+    {"PROVINCIA":"Málaga","PSOE":4.0,"PP":3.0,"VOX":2.0,"UP":1.0,"CS":1.0},
+    {"PROVINCIA":"Madrid","PSOE":10.0,"PP":10.0,"VOX":7.0,"UP":5.0,"CS":3.0},
+    {"PROVINCIA":"Lugo","PSOE":2.0,"PP":2.0,"VOX":0.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"La Rioja","PSOE":2.0,"PP":2.0,"VOX":0.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Lleida","PSOE":1.0,"PP":0.0,"VOX":0.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"León","PSOE":2.0,"PP":1.0,"VOX":1.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Jaén","PSOE":3.0,"PP":1.0,"VOX":1.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Huesca","PSOE":2.0,"PP":1.0,"VOX":0.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Huelva","PSOE":3.0,"PP":1.0,"VOX":1.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Gipuzkoa","PSOE":1.0,"PP":0.0,"VOX":0.0,"UP":1.0,"CS":0.0},
+    {"PROVINCIA":"Guadalajara","PSOE":1.0,"PP":1.0,"VOX":1.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Granada","PSOE":3.0,"PP":2.0,"VOX":1.0,"UP":1.0,"CS":0.0},
+    {"PROVINCIA":"Girona","PSOE":1.0,"PP":0.0,"VOX":0.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Cuenca","PSOE":2.0,"PP":1.0,"VOX":0.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"A Coruña","PSOE":3.0,"PP":3.0,"VOX":0.0,"UP":1.0,"CS":0.0},
+    {"PROVINCIA":"Córdoba","PSOE":2.0,"PP":2.0,"VOX":1.0,"UP":1.0,"CS":0.0},
+    {"PROVINCIA":"Ciudad Real","PSOE":2.0,"PP":2.0,"VOX":1.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Castellón","PSOE":2.0,"PP":1.0,"VOX":1.0,"UP":1.0,"CS":0.0},
+    {"PROVINCIA":"Cádiz","PSOE":3.0,"PP":2.0,"VOX":2.0,"UP":1.0,"CS":1.0},
+    {"PROVINCIA":"Cáceres","PSOE":2.0,"PP":1.0,"VOX":1.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Burgos","PSOE":2.0,"PP":2.0,"VOX":0.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Barcelona","PSOE":8.0,"PP":2.0,"VOX":2.0,"UP":0.0,"CS":2.0},
+    {"PROVINCIA":"Illes Balears","PSOE":2.0,"PP":2.0,"VOX":2.0,"UP":2.0,"CS":0.0},
+    {"PROVINCIA":"Badajoz","PSOE":3.0,"PP":2.0,"VOX":1.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Ávila","PSOE":1.0,"PP":1.0,"VOX":1.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Almería","PSOE":2.0,"PP":2.0,"VOX":2.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Alicante","PSOE":4.0,"PP":3.0,"VOX":3.0,"UP":1.0,"CS":1.0},
+    {"PROVINCIA":"Albacete","PSOE":2.0,"PP":1.0,"VOX":1.0,"UP":0.0,"CS":0.0},
+    {"PROVINCIA":"Álava","PSOE":1.0,"PP":0.0,"VOX":0.0,"UP":1.0,"CS":0.0}],
+
     faqs: [
       {
         question: `Definición del Data Set`,
@@ -125,7 +122,7 @@ module.exports = {
         <p>La naturaleza del presente proyecto se sintetiza en el despliegue de un laboratorio de investigación, en base a las actuales tecnologías disruptivas de gestión de datos, sobre comportamiento electoral de los españoles.</p>
 <p>En este sentido la principal dificultad radica en el propio proceso de selección de variables, obligando a delimitar un espacio acotado de trabajo sobre datos de acceso publico:</p>
 <p><h5>Datos electorales</h5></p>
-<p>Los datos electorales son la base de la Práctica, y constan de los resultados electorales detallados de las secciones censales en los comicios generales de 2011, 2015, 2016, y los dos celebrados en 2019. Los datos se han extraído de la página web del <a target="_blank" rel="noopener noreferrer" href="http://www.infoelectoral.mir.es/infoelectoral/min/areaDescarga.html%3Bjsessionid=973C4547323B195A974FFF6B90C32B52?method=searchb">Ministerio del Interior</a>. Se trata de, para cada elección, de un conjunto de ficheros .DAT. Los dos fundamentales son los que definen las distintas mesas electorales, y el resultado de cada partido en ellas.</p>
+<p>Los datos electorales son la base de la Práctica, y constan de los resultados electorales detallados de las secciones censales en los comicios generales de 2011, 2015, 2016, y los dos celebrados en 2019. Los datos se han extraído de la página web del <a target="_blank" rel="noopener noreferrer" href="http://www.infoelectoral.mir.es/infoelectoral/min/areaDescarga.html?method=inicio">Ministerio del Interior</a>. Se trata de, para cada elección, de un conjunto de ficheros .DAT. Los dos fundamentales son los que definen las distintas mesas electorales, y el resultado de cada partido en ellas.</p>
 <p><h5>Datos sociodemográficos</h5>
 <p>Hemos complementado los datos electorales de las secciones con datos sociodemográficos, también a nivel de sección censal cuando fue posible, o a nivel de municipio en su defecto. El origen de los datos ha sido el INE, el Ministerio de Inclusión Social y Migraciones, y el Ministerio de Trabajo y Economía Social.</p>
 <p> Esta decisión se justifica ante el hecho de que una vez considerados los resultados electorales como variable objetivo en nuestro estudio, es necesario establecer una imagen fija de las personas que ya sabemos como vota. Evidentemente el objetivo es conocer las posibles relaciones entre ambos conjuntos de datos.
@@ -133,7 +130,6 @@ module.exports = {
 <p>Esta fuente puede considerarse como uno de los pilares de la práctica final: aportar una fuente de datos dinámica a escenarios dibujados por datos estáticos. Las encuestas tradicionales (CIS) suscitan numerosas críticas en su aportación a la investigación por varios factores (sesgo en el trabajo de campo, cocina estadística, etc.), sin embargo, las redes sociales, con la debida gestión y rigor científico, pueden ofrecer una increíble dinamismo sobre la actualidad y la opinión generada y cómo ambas podrían estar relacionadas con nuestra variable objetivo.</p>
 <p>En este sentido, justificamos la especial importancia de una fuente de información no estructurada que se convierte en sí en un campo por explorar para la ciencia de los datos como ciencia del análisis social.<p>
 <p>De hecho, así lo confirma que se trate de un tema en vías de desarrollo, objeto de numerosas investigaciones nacionales e internacionales y tesis doctorales actuales, por las que decidimos incluir la variable redes sociales, en concreto Twitter, en nuestro análisis de los resultados electorales de las elecciones generales del último año.</p>
-<p><a target="_blank" rel="noopener noreferrer" href="http://electomedia.codx.tech/">Consultar el marco teórico desarrollado sobre el uso de Twitter</a></p>
 <p><h5>Microdatos del Centro de Investigaciones Sociológicas</h5></p>
 <p>Los estudios del Centro de Investigaciones Sociológicas son una importante fuente de datos en materia electoral. Concretamente, realización de los Macrobarómetros en las semanas previas a los comicios análizados, son considerados una importante fuente para el ejercicio actual</p>
 <p>Nos podemos preguntar si sería posible hacer una estimación de voto futuro a partir de un sondeo. Para ello nos basamos en los microdatos del sondeo del CIS antes de las elecciones de noviembre de 2019. El CIS es la única firma de sondeos que hace público sus microdatos, y en el caso de los sondeos preelectorales se trata de una muestra de casi 18.000 encuestas.</p>
@@ -213,9 +209,7 @@ module.exports = {
         <ul>2019-10-15 until:2019-11-11'</ul>
         </ol>
         <p>Finalmente analizamos a modo de ejemplo los datos de Abril de 2019. 
-        Los notebooks están en el github numerados y los datasets globales en el bucket correspondiente de S3.</p>
-        <p><a target="_blank" rel="noopener noreferrer" href="http://electomedia.codx.tech/">Consultar el marco teórico desarrollado sobre el uso de Twitter</a></p>      
-                `,
+        Los notebooks están en el github numerados y los datasets globales en el bucket correspondiente de S3.</p>                `,
       },
       {
         question: `Modelado`,
@@ -261,7 +255,18 @@ module.exports = {
       },
       {
         question: `Electomedia Lab`,
-        answer: `<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/eesquivias/proyecto_electomedia">Repositorio de Github</a></li>
+        answer: `<p id="lab_img"></p>
+        <p>A modo de conclusión, desde la visión particular del presente proyecto, nos acercamos a una visión sobre la gestión de datos en base a comportamientos electorales que se aproxima al estado del arte general del Big Data y las tecnologías disruptivas de tratamiento de información: todo está por hacer.</p>
+<p>Y este todo está por hacer, a nuestro modo de ver, está relacionado con dos aspectos a tener en cuenta en el camino que Electomedia deja abierto: la calidad del dato y el dinamismo de las propias herramientas de gestión.</p>
+<p>Las características socioelectorales, a pesar de ofrecer un contínuo de actualizaciones (anuales, bianuales, cuatrianuales, etc.) deben ser consideradas informaciones estáticas en la actual era del procesamiento computacional. Ofrecen una imagen fija en un momento concreto de una sociedad que se mueve cada vez a mayor velocidad. Es intentar pintar con acuarelas la foto finish de una carrera. Los datos socioelectorales que provienen de la administración son fiables, confiables, ordenados y de gran calidad, pero deben ser tenidos en cuenta como un punto de supervisión para otros análisis más en sincronía con el mundo moderno; como el análisis de sentimiento o NLP.</p>
+<p>Por eso esto es una conclusión que no concluye, sino que muestra la necesidad de seguir trabajando en nuevas fuentes no estructuradas, como las redes sociales, que se aproximen a los impulsos y pasiones de las personas; seguir trabajando en mejores modelos para los datos estructurados y en indagar las constantes mejoras de productos, una oportunidad que no hemos dejado a un lado por la mera inquietud que ya nos acompaña y que este bootcamp y sus profesores han sabido inculcarnos desde el primer minuto. El más importante de los legados, sin duda.</p>
+<h5>Líneas de investigación y arquitecturas</h5>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://aws-quickstart.github.io/quickstart-tableau-sagemaker">Sagemaker y Tableau, democratizando la AI</a></li>
+        <p id="sagemaker_img"></p>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://aws.amazon.com/es/blogs/big-data/building-aws-data-lake-visualizations-with-amazon-athena-and-tableau/">Tandem S3-Athena-Tableau, query interactiva desde el bucket a la visualización</a></li>
+        <p id="athena_img"></p>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://towardsdatascience.com/integrating-aws-sagemaker-models-with-quicksight-acfe9e5e9cf1">Quicksigth: presente limitado, futuro prometedor</a></li>
+        <p id="quicksight_img"></p>
         `,
       },
       
