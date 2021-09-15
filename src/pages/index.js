@@ -3,7 +3,6 @@ import Layout from "../components/layout"
 import Map from "../components/map"
 import LastUpdate from "../components/last-update"
 import Table from "../components/table"
-import Table2 from "../components/table2"
 //import Total from "../components/total"
 import FAQs from "../components/FAQs"
 import { useStaticQuery, graphql } from "gatsby"
@@ -35,9 +34,18 @@ export default props => {
           PP
           VOX
           UP
+          ERC
           CS
+          JxC
           PNV
-          BILDU
+          BILD
+          M_PA
+          CCA
+          NA_S
+          COMP
+          BNG
+          PRC
+          T_EX
         }
         data_source
         faqs {
@@ -57,13 +65,21 @@ export default props => {
       <DataSourceReference data={data.site.siteMetadata.data_source} />
        <div className="container">
         <div className="dummy-link" id="tables-link">
-          <div id="faqs">Diputados al Congreso por Circunscripción Electoral - Elecciones Generales Noviembre 2019</div>
+          <div id="faqs"><h5>Diputados al Congreso por Circunscripción Electoral - <b>Elecciones Generales Noviembre 2019</b></h5></div>
+     
           </div>
           </div>
       <Map data={data.site.siteMetadata.data} mapData={spainMapData} />
+      
       <div className="container">
+      <div id="faqss">
+            <div><h5>Candidaturas más votadas por provincia</h5></div>
+            <div id="psoe">PSOE</div>
+            <div id="pp">PP</div>
+            <div id="empate">Empate entre dos o más candidaturas</div>
+          </div>
         <div className="dummy-link" id="tables-link">
-          <div id="faqs">dsdsds</div>
+
           </div>
         <div className="row" id="middle-info-holder">
           <Table data={data.site.siteMetadata.data} />

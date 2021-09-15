@@ -8,30 +8,35 @@ const Popup = props => {
       id="popup"
       style={{
         display: props.visibility ? "block" : "none",
-        left: props.left + "px",
-        top: props.top + "px",
+        left: 1200 + "px",
+        top: 350 + "px",
       }}
     >
       <h6>{props.PROVINCIA}</h6> 
       <table>
         <thead>
           <tr>
-            <th>PSOE</th>
-            <th>PP</th>
-            <th>VOX</th>
-            <th>UP</th>
-            <th>CS</th>
-            <th>PNV</th>
+          <tr><th>Partido Socialista</th><td>{props.PSOE}</td></tr>
+          <tr><th>Partido Popular</th><td>{props.PP}</td></tr>
+          <tr><th>VOX</th><td>{props.VOX}</td></tr>
+          <tr><th>Unidas Podemos</th><td>{props.UP}</td></tr>
+          <tr><th>Ezquerra Republica Catalunya</th><td>{props.ERC}</td></tr>
+          <tr><th>Ciudadanos</th><td>{props.CS}</td></tr>
+          <tr><th>Junts per Cat</th><td>{props.JxC}</td></tr>
+          <tr><th>Partido Nacionalista Vasco</th><td>{props.PNV}</td></tr>
+          <tr><th>BILDU</th><td>{props.BILD}</td></tr>
+          <tr><th>Más País</th><td>{props.M_PA}</td></tr>
+          <tr><th>Coalición Canaria</th><td>{props.CCA}</td></tr>
+          <tr><th>Navarra Suma</th><td>{props.NA_S}</td></tr>
+          <tr><th>Compromis</th><td>{props.COMP}</td></tr>
+          <tr><th>Bloque Nacionalista Galego</th><td>{props.BNG}</td></tr>
+          <tr><th>Partido Regionalista de Cantabria</th><td>{props.PRC}</td></tr>
+          <tr><th>Teruel Existe</th><td>{props.T_EX}</td></tr>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>{props.PSOE}</td>
-            <td>{props.PP}</td>
-            <td>{props.VOX}</td>
-            <td>{props.UP}</td>
-            <td>{props.CS}</td>
-            <td>{props.PNV}</td>
+          <tr></tr>
           </tr>
         </tbody>
       </table>
@@ -106,9 +111,13 @@ const SpainMap = ({
       .attr("d", path)
       //.attr("fill", (d, i) => fillColor(popupData[i].PSOE)) // Declaración de la variable number
       .attr("fill", (d, i) => {if((popupData[i].PSOE) > (popupData[i].PP)){return "#ff9f9f"}
-      if((popupData[i].PSOE) < (popupData[i].PP)){return "#78b5b8"}
-      if((popupData[i].VOX) > (popupData[i].PP)){return "#c0dec7"}  
-      if((popupData[i].PSOE) = (popupData[i].PP)){return "#bbaa5e"}
+      else if((popupData[i].PSOE) < (popupData[i].PP)){return "#78b5b8"}
+      else if((popupData[i].ERC) > (popupData[i].PSOE)){return "#ffe49e"}
+      else if((popupData[i].VOX) > (popupData[i].PP)){return "#c0dec7"}  
+      else if((popupData[i].PSOE) = (popupData[i].PP)){return "#dedec5"}
+      else if((popupData[i].ERC = popupData[i].PSOE) && (popupData[i].PSOE > popupData[i].PP)){return "#dedec5"}
+      else if((popupData[i].ERC) = (popupData[i].JxC)){return "#dedec5"}
+
     })  
       .attr("stroke", "#444")
       .attr("stroke-width", "0.35")
@@ -119,7 +128,18 @@ const SpainMap = ({
           popupData[i].PP,
           popupData[i].VOX,
           popupData[i].UP,
-          popupData[i].CS
+          popupData[i].ERC,
+          popupData[i].CS,
+          popupData[i].JxC,
+          popupData[i].PNV,
+          popupData[i].BILD,
+          popupData[i].M_PA,
+          popupData[i].CCA,
+          popupData[i].NA_S,
+          popupData[i].COMP,
+          popupData[i].BNG,
+          popupData[i].PRC,
+          popupData[i].T_EX
         )
       })
       .on("mouseleave", function() {
@@ -147,21 +167,32 @@ const SpainMap = ({
           popupData[i].PP,
           popupData[i].VOX,
           popupData[i].UP,
-          popupData[i].CS
+          popupData[i].ERC,
+          popupData[i].CS,
+          popupData[i].JxC,
+          popupData[i].PNV,
+          popupData[i].BILD,
+          popupData[i].M_PA,
+          popupData[i].CCA,
+          popupData[i].NA_S,
+          popupData[i].COMP,
+          popupData[i].BNG,
+          popupData[i].PRC,
+          popupData[i].T_EX
         )
       })
       .on("mouseleave", function() {
         mouseLeaveHandler()
 
       })
-
+/*
     svg
       .selectAll("append")
       .data(popupData)
       .enter()
       .append("circle")
-      .attr('cx', 25)
-      .attr('cy', 250)
+      .attr('cx', 250)
+      .attr('cy', 700)
       .attr('r', 25)
       .attr("stroke", "#444")
       .attr("stroke-width", "0.35")
@@ -172,8 +203,8 @@ const SpainMap = ({
       .data(popupData)
       .enter()
       .append("circle")
-      .attr('cx', 25)
-      .attr('cy', 350)
+      .attr('cx', 450)
+      .attr('cy', 700)
       .attr('r', 25)
       .attr("stroke", "#444")
       .attr("stroke-width", "0.35")
@@ -184,12 +215,12 @@ const SpainMap = ({
       .data(popupData)
       .enter()
       .append("circle")
-      .attr('cx', 25)
-      .attr('cy', 450)
+      .attr('cx', 650)
+      .attr('cy', 700)
       .attr('r', 25)
       .attr("stroke", "#444")
       .attr("stroke-width", "0.35")
-      .attr('fill', '#bbaa5e')
+      .attr('fill', '#dedec5')*/
   }
 
   useEffect(() => {
@@ -214,7 +245,18 @@ export default ({ data, mapData }) => {
   const [PP, setPP] = useState(0)
   const [VOX, setVOX] = useState(0)
   const [UP, setUP] = useState(0)
+  const [ERC, setERC] = useState(0)
   const [CS, setCS] = useState(0)
+  const [JxC, setJxC] = useState(0)
+  const [PNV, setPNV] = useState(0)
+  const [BILD, setBILD] = useState(0)
+  const [M_PA, setM_PA] = useState(0)
+  const [CCA, setCCA] = useState(0)
+  const [NA_S, setNA_S] = useState(0)
+  const [COMP, setCOMP] = useState(0)
+  const [BNG, setBNG] = useState(0)
+  const [PRC, setPRC] = useState(0)
+  const [T_EX, setT_EX] = useState(0)
   const [popup, setPopup] = useState({ left: 0, top: 0 })
   const [visible, setVisible] = useState(false)
 
@@ -241,15 +283,25 @@ export default ({ data, mapData }) => {
     setPopup(tmp)
   }
 
-  const mouseEnter = (PROVINCIA, PSOE, PP, VOX, UP, CS) => {
+  const mouseEnter = (PROVINCIA, PSOE, PP, VOX, UP, ERC, CS, JxC, PNV, BILD, M_PA, CCA, NA_S, COMP, BNG, PRC, T_EX) => {
     setVisible(true)
     setProvince(PROVINCIA)
     setPSOE(numberWithCommas(PSOE))
     setPP(numberWithCommas(PP))
     setVOX(numberWithCommas(VOX))
     setUP(numberWithCommas(UP))
+    setERC(numberWithCommas(ERC))
     setCS(numberWithCommas(CS))
-
+    setJxC(numberWithCommas(JxC))
+    setPNV(numberWithCommas(PNV))
+    setBILD(numberWithCommas(BILD))
+    setM_PA(numberWithCommas(M_PA))
+    setCCA(numberWithCommas(CCA))
+    setNA_S(numberWithCommas(NA_S))
+    setCOMP(numberWithCommas(COMP))
+    setBNG(numberWithCommas(BNG))
+    setPRC(numberWithCommas(PRC))
+    setT_EX(numberWithCommas(T_EX))
   }
 
   const mouseLeave = () => {
@@ -269,7 +321,18 @@ export default ({ data, mapData }) => {
         PP={PP}
         VOX={VOX}
         UP={UP}
+        ERC={ERC}
         CS={CS}
+        JxC={JxC}
+        PNV={PNV}
+        BILD={BILD}
+        M_PA={M_PA}
+        CCA={CCA}
+        NA_S={NA_S}
+        COMP={COMP}
+        BNG={BNG}
+        PRC={PRC}
+        T_EX={T_EX}
         visibility={visible}
         left={popup.left}
         top={popup.top}
