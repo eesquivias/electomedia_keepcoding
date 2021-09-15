@@ -20,7 +20,7 @@ const Popup = props => {
           <tr><th>Partido Popular</th><td>{props.PP}</td></tr>
           <tr><th>VOX</th><td>{props.VOX}</td></tr>
           <tr><th>Unidas Podemos</th><td>{props.UP}</td></tr>
-          <tr><th>Ezquerra Republica Catalunya</th><td>{props.ERC}</td></tr>
+          <tr><th>Esquerra Republica Catalunya</th><td>{props.ERC}</td></tr>
           <tr><th>Ciudadanos</th><td>{props.CS}</td></tr>
           <tr><th>Junts per Cat</th><td>{props.JxC}</td></tr>
           <tr><th>Partido Nacionalista Vasco</th><td>{props.PNV}</td></tr>
